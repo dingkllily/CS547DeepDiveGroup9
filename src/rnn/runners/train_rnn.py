@@ -202,5 +202,5 @@ _ = opt_model.train_model(
     dataset_processed, train_keys + val_keys, num_epoch=num_epoch, 
     learning_rate=learning_rate, optimizer_type = opt_optimizer)
 
-metric_c = opt_model.test(dataset_processed, test_keys)
+metric = opt_model.test(dataset_processed, test_keys)
 print(f"Optimal model metric: {metric:.5f} on test set")

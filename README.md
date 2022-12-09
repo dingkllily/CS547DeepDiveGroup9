@@ -14,7 +14,7 @@ Kelin Ding
 
 ## Regression task
 * Regression task was used to estimate the number of crimes happend on people with certain sex and age when a certain month and location are specified.
-* A simple linear model was implemented as benchmark. The result metric (Mean Absolute Error, MAE) is 0.34.
+* A simple linear model was implemented as benchmark. The result metric (Mean Absolute Error, MAE) is 0.34. From the trained weights, we separated the inputs into negative and positive related features. For example, in the bar chart we can see longitude is positively-related, while latitude is negative. It matched with the actual distribution of crime rate at Los Angeles: Northeast is safer than Southwest, as the figure shows. We can also find that November and December are months with the fewest crime count and young people are more likely to be victims.
 * A 3-layer deep learning model was proposed, built with fully-connected layers, batch normalization layers, and dropout layers. After hyperparameter tuning among batch size, hidden layer dimension, optimizer type, and dropout rate, the result metric for the optimal model is 0.29, which improved 12% in MAE compared with the linear model benchmark.
 * Feature importance was calculated based on the trained weights in the proposed deep learning model.
 
