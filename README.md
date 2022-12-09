@@ -19,12 +19,13 @@ Kelin Ding
 * Feature importance was calculated based on the trained weights in the proposed deep learning model.
 
 ## Folder Structure
-```
 - /
   - data
-    - Crime_Data_from_2020_to_Present.csv
-    - rawData.pkl
-  - notebooks
+    - Crime_Data_from_2020_to_Present.txt
+        link to Crime_Data_from_2020_to_Present.csv
+    - rawData.txt
+        link to rawData.pkl
+  - notebooks: original jupyter notebooks
     - dataProcessingAnalysis.ipynb
     - Classification
         - Logistic regression.ipynb
@@ -34,9 +35,24 @@ Kelin Ding
         - DeepLearningModel
             - Deep Learning Method - Regression Model.ipynb
             - featureImportance.ipynb 
+  - src: conversion to python code
+    - regression
+        - model
+            - benchmark.py: benchmark linear model
+            - mlp.py: 3-layer mlp deep regression model
+        - utils
+            - dataloader.py: dataset loading methods
+            - preprocessing.py: data preprocessing utils
+        - runners
+            - train_benchmark.py: code to train benchmark model
+            - train_mlp.py code to train the mlp model
+            - usage
+            ```sh
+            cd src/regression
+            python -m python -m runners.train_benchmark
+            python -m python -m runners.train_mlp
+            ```
   - README.md
-  - Video Presentation Slides
-```
 
 ## License
 
