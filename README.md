@@ -32,7 +32,7 @@ Kelin Ding
     - dataProcessingAnalysis.ipynb
     - Regression
         - Benchmark
-            - Benchmark_Model_Logistic_Regression_(Part_1_Visualization).ipynb
+            - Benchmark_Model_Logistic_Regression_(Part_1_Visualization and Loss).ipynb
             - Benchmark_Model_Logistic_Regression_(Part_2_Training,_Testing_and_Forecasting).ipynb
             - Benchmarks - Linear Regression.ipynb
         - DeepLearningModel
