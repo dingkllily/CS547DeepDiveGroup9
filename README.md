@@ -18,6 +18,9 @@ Kelin Ding
 * A 3-layer deep learning model was proposed, built with fully-connected layers, batch normalization layers, and dropout layers. After hyperparameter tuning among batch size, hidden layer dimension, optimizer type, and dropout rate, the result metric for the optimal model is 0.29, which improved 12% in MAE compared with the linear model benchmark.
 * Feature importance was calculated based on the trained weights in the proposed deep learning model.
 
+## Future prediction
+* The project document also mentioned to use an RNN to discover whether crime is self-exciting. Our work with a simple GRU RNN network shows crime numbers for a certain location (latitude + longitude) and a certain victim sex do have self-exciting property.
+
 ## Folder Structure
 - /
   - data
@@ -35,6 +38,8 @@ Kelin Ding
         - DeepLearningModel
             - Deep Learning Method - Regression Model.ipynb
             - featureImportance.ipynb 
+    - RNN - future prediction
+        - Deep Learning Method - RNN Model.ipynb
   - src: conversion to python code
     - regression
         - model
@@ -51,6 +56,19 @@ Kelin Ding
             cd src/regression
             python -m runners.train_benchmark
             python -m runners.train_mlp
+            ```
+    - rnn
+        - model
+            - RNN.py: a simple GRU network
+        - utils
+            - dataloader.py: dataset loading methods
+            - preprocessing.py: data preprocessing utils
+        - runners
+            - train_rnn.py: code to train rnn model
+            - usage
+            ```sh
+            cd src/rnn
+            python -m runners.train_rnn
             ```
   - README.md
 
