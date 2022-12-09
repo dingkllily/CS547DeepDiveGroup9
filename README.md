@@ -1,7 +1,7 @@
 Team members:
-Tianming Zhao
-Mingyi Lai
-Sean Chou
+Tianming Zhao,
+Mingyi Lai,
+Sean Chou,
 Kelin Ding
 
 ## Explaining the problem:
