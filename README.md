@@ -1,7 +1,7 @@
 Team members:
-Tianming Zhao
-Mingyi Lai
-Sean Chou
+Tianming Zhao,
+Mingyi Lai,
+Sean Chou,
 Kelin Ding
 
 ## Explaining the problem:
@@ -27,10 +27,10 @@ Kelin Ding
         link to rawData.pkl
   - notebooks: original jupyter notebooks
     - dataProcessingAnalysis.ipynb
-    - Classification
-        - Logistic regression.ipynb
     - Regression
         - Benchmark
+            - Benchmark_Model_Logistic_Regression_(Part_1_Visualization).ipynb
+            - Benchmark_Model_Logistic_Regression_(Part_2_Training,_Testing_and_Forecasting).ipynb
             - Benchmarks - Linear Regression.ipynb
         - DeepLearningModel
             - Deep Learning Method - Regression Model.ipynb
