@@ -49,8 +49,8 @@ Kelin Ding
             - usage
             ```sh
             cd src/regression
-            python -m python -m runners.train_benchmark
-            python -m python -m runners.train_mlp
+            python -m runners.train_benchmark
+            python -m runners.train_mlp
             ```
   - README.md
 
